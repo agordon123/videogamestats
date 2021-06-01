@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="background" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: BLACK;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gamestatstracker.StatTrackerGUIController">
+    <stylesheets>
+        <URL value="@stattrackergui.css" />
+    </stylesheets>
+   <children>
+      <ImageView fx:id="img1" fitHeight="350.0" fitWidth="200.0" layoutX="5.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/butler.jpg" />
+         </image>
+         <effect>
+            <Glow />
+         </effect></ImageView>
+      <ImageView fx:id="img2" fitHeight="350.0" fitWidth="200.0" layoutX="205.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/harden.jpg" />
+         </image>
+         <effect>
+            <Glow />
+         </effect></ImageView>
+      <ImageView fx:id="img3" fitHeight="350.0" fitWidth="200.0" layoutX="405.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vince.jpg" />
+         </image>
+         <effect>
+            <Glow />
+         </effect></ImageView>
+      <ImageView fx:id="img4" fitHeight="350.0" fitWidth="200.0" layoutX="605.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/kobe.jpg" />
+         </image>
+         <effect>
+            <Glow />
+         </effect></ImageView>
+      <TextField fx:id="infoCapture" alignment="CENTER" layoutX="11.0" layoutY="109.0" onAction="#inputValue" prefHeight="47.0" prefWidth="188.0" promptText="insert stat">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></TextField>
+      <Button fx:id="creation" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#createGame" text="Insert Stats">
+         <font>
+            <Font name="Bodoni MT Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

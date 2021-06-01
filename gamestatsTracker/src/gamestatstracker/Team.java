@@ -5,15 +5,10 @@
  */
 package gamestatstracker;
 
-import java.util.List;
-import java.util.Map;
-
 /**
  *
  * @author gorda
  */
-public interface GeneralStats {
-    public void displayStats(Map map);
-    public List<String> buildArray();
-  
+public class Team {
+    
 }
