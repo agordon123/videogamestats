@@ -35,14 +35,16 @@ public class StatTrackerGUIController implements Initializable {
     private ImageView img4;
     @FXML
     private Button creation;
-    @FXML
-    private TextField infoCapture;
     private File f;
     private FileOutputStream strm;
     private FileWriter fw;
     @FXML
     private AnchorPane background;
-    BasketballPlayer p = new BasketballPlayer();
+    BasketballPlayer p;
+    @FXML
+    private Button quitButton;
+    @FXML
+    private TextField captureBox;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -54,17 +56,22 @@ public class StatTrackerGUIController implements Initializable {
 
        
 
-    @FXML
-    private void createGame(ActionEvent event) {
-       
+    
+    private void gameMaker(){
         
     }
 
-
     @FXML
-    private void inputValue(ActionEvent event) {
+    private void addPlayer(ActionEvent event) {
     }
 
+    @FXML
+    private void quitProgram(ActionEvent event) {
+    }
+
+    @FXML
+    private void fieldEntry(ActionEvent event) {
+    }
             
         
  

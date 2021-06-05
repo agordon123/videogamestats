@@ -42,14 +42,16 @@
          <effect>
             <Glow />
          </effect></ImageView>
-      <TextField fx:id="infoCapture" alignment="CENTER" layoutX="11.0" layoutY="109.0" onAction="#inputValue" prefHeight="47.0" prefWidth="188.0" promptText="insert stat">
-         <font>
-            <Font name="Calibri Bold" size="24.0" />
-         </font></TextField>
-      <Button fx:id="creation" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#createGame" text="Insert Stats">
+      <Button fx:id="creation" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#addPlayer" text="Enter Player">
          <font>
             <Font name="Bodoni MT Bold" size="14.0" />
          </font>
       </Button>
+      <Button fx:id="quitButton" layoutX="777.0" layoutY="1.0" mnemonicParsing="false" onAction="#quitProgram" text="X" textAlignment="CENTER" textFill="#f50202">
+         <font>
+            <Font name="Bodoni MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="captureBox" layoutX="131.0" layoutY="16.0" onAction="#fieldEntry" />
    </children>
 </AnchorPane>

@@ -25,16 +25,16 @@ public class BasketballPlayer implements GeneralStats{
     private Scanner scnr = new Scanner(System.in);
 
     public BasketballPlayer() {
-        this.name = setName();
-        this.statistics = enterStats();
+        this.name = " ";
+        this.statistics = statistics;
     }
-
+    
     public String setName() {
         System.out.println("Enter Player Name");
         this.name = scnr.next();
         return this.name;
     }
-
+    @Override
     public List<String> buildArray(){
         statNames = new ArrayList<>();
         String[] names = {"minutes","points","rebounds","assists","steals","fouls","turnovers","fga","fgm","ThreePA","ThreePM","Blocks"};
